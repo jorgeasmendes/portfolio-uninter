@@ -1,13 +1,25 @@
 body{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
     justify-content: space-between;
     padding: 10px;
     background-color: #334966;
-    color: bisque;
+    color: #FFFFFF;
+}
+footer{
+    padding: 10px;
+    background-color: #334966;
+    color: #FFFFFF;
+    text-align: center;
 }
 .site-title, .spacer{
     width: 140px;
@@ -15,9 +27,10 @@ header{
 }
 a{
     text-decoration: none;
-    color: bisque;
+    color: #FFFFFF;
 }
 nav a{
+    background-color: #F2D3C2;
     padding: 2px 8px;
     border-radius: 10px;
     color: #334966;
@@ -26,13 +39,26 @@ nav a{
     border: solid 2px  #334966;
 }
 nav a:hover{
-   background-color: bisque;
+   background-color: #F7C6A3;
 }    
 nav{
-    background-color: #9ABDB6;
+    background-color: #6c829d;
     color:bisque;
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 20px;
+}
+main{
+    padding: 80px 200px;
+    background-color: #F4F7FA;
+    flex:1;
+}
+
+
+#home{
+    text-align: center;
+}
+#home p{
+    font-size: 30px;
 }
