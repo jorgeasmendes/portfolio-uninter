@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #334966;
+    color: bisque;
+}
+.site-title, .spacer{
+    width: 140px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: bisque;
+}
+nav a{
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: #334966;
+    font-weight: 600;
+    font-size: large;
+    border: solid 2px  #334966;
+}
+nav a:hover{
+   background-color: bisque;
+}    
+nav{
+    background-color: #9ABDB6;
+    color:bisque;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
