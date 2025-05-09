@@ -7,22 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <! -- Cabeçalho com título do site à direita (que também é link para home) e título da página centralizada-->
     <header>
         <div class="site-title"><a href="index.html" ><h3>Portfólio de Jorge Mendes</h3></a></div>
-        <div class="page-title"><h1>Contato</h1></div>
+        <div class="page-title"><h1>Home</h1></div>
         <div class="spacer"></div>
     </header>
+    <! -- Barra de navegação com os links de cada página do site, exceto a home -- >
     <nav>
         <a href="sobremim.html">Sobre mim</a>
         <a href="formacao.html">Formação</a>
         <a href="portfolio.html">Portfólio</a>
         <a href="contato.html">Contato</a>
     </nav>
+<! -- Limite do template / Início do conteúdo da página-->
 
-    <main>
-        
+    <main id="contato">
+        <h3>Me envie por aqui sua mensagem:</h3>
+        <form>
+            <input class="input-text" required="true" type="text" placeholder="Seu nome">
+            <input class="input-text" required="true" type="email" placeholder="Seu email">
+            <textarea required="true" rows="8" cols="45" placeholder="Sua mensagem"></textarea>
+            <input id="submit" type="submit">
+        </form>
     </main>
 
+<! -- Limite do template / Fim do conteúdo da página e início do rodapé -->
     <footer>
         <p>Criado em 2025</p>
     </footer>

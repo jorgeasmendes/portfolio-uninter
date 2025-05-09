@@ -1,6 +1,6 @@
+/*-----------------------------------Definições gerais de template-----------------------------------*/
+/*Tela sempre 100% ocupada e fonte sem serifa*/
 body{
-    height: 100%;
-    width: 100%;
     min-height: 100vh;
     font-family: sans-serif;
     margin: 0;
@@ -8,11 +8,19 @@ body{
     display: flex;
     flex-direction: column;
 }
+/*Tirar sublinhado de todos os links*/
+a{
+    text-decoration: none;
+}
+/*Definições gerais de cabeçalho e rodapé*/
 header{
     display: flex;
     justify-content: space-between;
     padding: 10px;
     background-color: #334966;
+    color: #FFFFFF;
+}
+header a{
     color: #FFFFFF;
 }
 footer{
@@ -21,26 +29,12 @@ footer{
     color: #FFFFFF;
     text-align: center;
 }
+/*Spacer sendo usado para centralizar o título da página*/
 .site-title, .spacer{
     width: 140px;
-    text-align: center;
+    padding: 0 25px;
 }
-a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-nav a{
-    background-color: #F2D3C2;
-    padding: 2px 8px;
-    border-radius: 10px;
-    color: #334966;
-    font-weight: 600;
-    font-size: large;
-    border: solid 2px  #334966;
-}
-nav a:hover{
-   background-color: #F7C6A3;
-}    
+/*Definições gerais da barra de navegção*/
 nav{
     background-color: #6c829d;
     color:bisque;
@@ -49,16 +43,135 @@ nav{
     gap: 30px;
     padding: 20px;
 }
+nav a {
+    background-color: #FFA500;
+    padding: 5px 18px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+    border: solid 2px  #334966;
+}
+nav a:hover{
+   background-color: #F7C6A3;
+   color: black;
+}
+/*Definições gerais da parte do conteúdo das páginas 
+(flex 1 usado para que ocupe todo o espaço restante da janela)*/    
 main{
-    padding: 80px 200px;
+    padding: 10px 400px;
     background-color: #F4F7FA;
     flex:1;
 }
 
 
+/*-----------------------------------Definições específicas de cada página-----------------------------------*/
+/*home*/
 #home{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 #home p{
     font-size: 30px;
+    text-align: justify;
+}
+#home img{
+    width: 200px;  
+}
+
+/*sobre-mim*/
+#sobre-mim{
+    font-size: 25px;
+}
+
+/*formacao*/
+#formacao ul{
+    padding: 0 5px;
+    margin-top: 0;
+}
+#formacao ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+#formacao h2{
+    margin-bottom: 0;
+}
+
+/*portfolio*/
+#portfolio h3{
+    font-size: 22px;
+}
+#portfolio{
+    padding: 10px 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#portfolio .legenda{
+    margin: 0;
+    font-size: 18px;
+}
+#portfolio a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio a div{
+    width: 450px;
+    background-color: #FFA500;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    border: solid 2px  #334966;
+    margin-bottom: 10px;
+}
+#portfolio a div:hover{
+    background-color: #F7C6A3;
+}
+#portfolio .trabalho{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*contato*/
+#contato{
+    padding: 20px 500px;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: block;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+input, textarea{
+    margin: 0 20px 20px 0;
+    font-size: 18px;
+    padding: 2px 5px;
+}
+.input-text{
+     width:400px;
+}
+textarea{
+    resize: none;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+#submit{
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: #FFA500;
+}
+#submit:hover{
+       background-color: #F7C6A3;
 }
